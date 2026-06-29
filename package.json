@@ -1,0 +1,50 @@
+{
+  "name": "@telenow/bigcommerce-app",
+  "version": "1.0.0",
+  "description": "Native BigCommerce app: a multilingual AI voice agent that automatically phones shoppers on store events — COD confirmation (RTO reduction), abandoned-cart recovery, order confirmation, delivery/shipping updates, failed-delivery (NDR) retry, instant lead callback, win-back, and review/feedback calls — and writes every call outcome back onto the order. Free app; requires a Telenow account billed on usage.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "roundtrip": "node test/roundtrip.mjs",
+    "dev:seed": "node scripts/seed-demo.js",
+    "dev:preview": "npm run dev:seed && BIGCOMMERCE_CLIENT_ID=dev BIGCOMMERCE_CLIENT_SECRET=dev HOST=http://localhost:3000 PORT=3000 node src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "express": "^4.21.0"
+  },
+  "keywords": [
+    "bigcommerce",
+    "telenow",
+    "voice-ai",
+    "ai-voice-agent",
+    "automated-calls",
+    "outbound-calling",
+    "abandoned-cart-recovery",
+    "cod-confirmation",
+    "cash-on-delivery",
+    "rto",
+    "rto-reduction",
+    "order-confirmation",
+    "delivery-updates",
+    "shipping-notifications",
+    "failed-delivery",
+    "ndr",
+    "lead-callback",
+    "speed-to-lead",
+    "win-back",
+    "customer-re-engagement",
+    "customer-retention",
+    "multilingual-voice",
+    "hindi-voice-agent",
+    "review-calls",
+    "nps",
+    "where-is-my-order"
+  ]
+}
